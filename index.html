@@ -1,169 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio Ibrahim Alrupi</title>
+  <title>Alrupi | شركة برمجة تطبيقات موبايل حديثة</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Main CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Cairo:700,400,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <a href="#" class="logo">Ibrahim Alrupi</a>
-    <button id="themeToggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
-    <div class="toggle" id="menu-toggle"></div>
-    <ul class="menu nav-list">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#testimonial">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <header class="main-header">
+    <div class="container nav-flex">
+      <div class="logo"><i class="fas fa-layer-group"></i> Alrupi</div>
+      <nav>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#home" class="active">الرئيسية</a></li>
+          <li><a href="#about">عن الشركة</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#portfolio">الأعمال</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn contact-btn"><i class="fas fa-paper-plane"></i> تواصل الآن</a>
+    </div>
   </header>
-  <section class="banner section" id="home">
-    <div class="text-banner reveal">
-      <h2>Hello, I'm <br><span>Ibrahim Alrupi.</span></h2>
-      <h3 id="typewriter"></h3>
-      <a href="#about" class="btn">About Me</a>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <img src="IMG_6716.jpeg" class="company-logo" alt="Alrupi Logo">
+        <h1>شركة <span>Alrupi</span> لتطوير تطبيقات الموبايل</h1>
+        <p>نُبدع في صناعة تطبيقات iOS & Android عصرية، سريعة وآمنة، مع دعم كامل من البداية حتى الإطلاق.</p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn primary"><i class="fas fa-mobile-alt"></i> أعمالنا</a>
+          <a href="#contact" class="btn secondary"><i class="fas fa-envelope"></i> تواصل معنا</a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <img src="hh0.png.webp" alt="Alrupi Team">
+      </div>
     </div>
   </section>
+
   <section class="about section" id="about">
-    <div class="heading">
-      <h2>About Me</h2>
-    </div>
-    <div class="content about-content">
-      <div class="contentbox reveal">
-        <h3>I'm a professional web developer.</h3>
-        <p>
-          I am <b>Ibrahim Alrupi</b>, a passionate and creative web developer specializing in building modern, responsive, and user-friendly websites.<br>
-          I have extensive experience with HTML, CSS, JavaScript, and various frameworks. My goal is to deliver high-quality solutions that help clients achieve their business objectives.<br>
-          If you want to elevate your online presence with a stunning website, let's work together!
-        </p>
+    <div class="container about-content">
+      <div class="about-card">
+        <h2>من نحن؟</h2>
+        <p>شركة <b>Alrupi</b> متخصصة في تطوير تطبيقات الموبايل الذكية، نقدم حلول برمجية مبتكرة وموثوقة تناسب جميع الأعمال. خبرة في تنفيذ مشاريع ناجحة على App Store وGoogle Play.</p>
+        <ul class="about-list">
+          <li><i class="fas fa-check-circle"></i> فريق محترف من المبرمجين والمصممين</li>
+          <li><i class="fas fa-check-circle"></i> جودة عالية وسرعة في التنفيذ</li>
+          <li><i class="fas fa-check-circle"></i> دعم فني مستمر وخطط تطوير</li>
+        </ul>
+        <div class="about-social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
-      <div class="w50 about-img reveal">
-        <img src="ibrahim-1.jpg" class="img" alt="profile">
+       <div class="about-img">
+        <img src="ss.jpg" alt="فريق Alrupi">
+        <div class="about-img-overlay">
+          <span>فريق Alrupi</span>
+        </div>
       </div>
     </div>
   </section>
+
   <section class="services section" id="services">
-    <div class="heading white">
-      <h2>Services</h2>
-      <p>I offer professional web development and digital solutions.</p>
-    </div>
-    <div class="content">
-      <div class="servicesbox reveal">
-        <div class="icon"><i class="fas fa-laptop-code"></i></div>
-        <h2>Web Design</h2>
-        <p>Designing modern, attractive, and responsive websites tailored to your needs.</p>
-      </div> 
-      <div class="servicesbox reveal">
-        <div class="icon"><i class="fas fa-file-code"></i></div>
-        <h2>Web Development</h2>
-        <p>Developing robust and scalable web applications using the latest technologies.</p>
-      </div> 
-      <div class="servicesbox reveal">
-        <div class="icon"><i class="fas fa-database"></i></div>
-        <h2>Back-End Solutions</h2>
-        <p>Building secure and efficient back-end systems and APIs.</p>
-      </div> 
-      <div class="servicesbox reveal">
-        <div class="icon"><i class="fas fa-edit"></i></div>
-        <h2>UI/UX Design</h2>
-        <p>Creating intuitive and engaging user experiences and interfaces.</p>
-      </div> 
-      <div class="servicesbox reveal">
-        <div class="icon"><i class="fas fa-photo-video"></i></div>
-        <h2>SEO & Optimization</h2>
-        <p>Improving website speed, SEO, and overall performance for better results.</p>
-      </div> 
-    </div>
-  </section>
-  <section class="work section" id="work">
-    <div class="heading white">
-      <h2>My Latest Work</h2>
-      <p>Some of my recent projects in web development and design.</p>
-    </div>
-    <div class="content">
-      <div class="workbox reveal">
-       <a href="#"></a><img src="img.png" alt="project"></a
+  <div class="container">
+    <h2 class="section-title">خدماتنا</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon"><i class="fab fa-apple"></i></div>
+        <h3>تطوير تطبيقات iOS</h3>
+        <p>برمجة وتصميم تطبيقات آيفون وآيباد باستخدام Swift وواجهة استخدام متقدمة.</p>
       </div>
-      <div class="workbox reveal">
-        <a href="#"></a><img src="img44.png" alt="project"></a>
+
+      <div class="service-card">
+        <div class="icon"><i class="fab fa-android"></i></div>
+        <h3>تطوير تطبيقات Android</h3>
+        <p>تصميم وبرمجة تطبيقات أندرويد حديثة بكود نظيف وسريع الأداء.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" 
+               alt="Flutter" 
+               style="width:40px; height:40px;">
+        </div>
+        <h3>تطبيقات هجينة (Flutter)</h3>
+        <p>تطبيق واحد يعمل على كل الأنظمة بكفاءة عالية وبتكلفة أقل.</p>
       </div>
     </div>
-    <div class="heading">
-      <a href="#contact" class="btn">Let's Work Together</a>
-    </div>
-  </section>
-  <section class="testimonials section" id="testimonial">
-    <div class="heading">
-      <h2>Testimonials</h2>
-      <p>What my clients say about my work:</p>
-    </div>
-    <div class="content">
-      <div class="testimonialbox reveal">
-        <p>"Ibrahim was fantastic to work with. My website looks amazing and works perfectly on all devices!"</p>
-        <h3>Ahmed Mohamed<br><span>Business Owner</span></h3>
-      </div>
-      <div class="testimonialbox reveal">
-        <p>"Professional, creative, and always delivers on time. Highly recommended for any web project."</p>
-        <h3>Sarah Ali<br><span>Marketing Specialist</span></h3>
-      </div>
-    </div>
-  </section>
-  <section class="contact section" id="contact">
-    <div class="heading white">
-      <h2>Contact Me</h2>
-      <p>Ready to start your next project? Get in touch!</p>
-    </div>
-    <div class="content">
-      <div class="contactinfo reveal">
-        <h3>Contact Information</h3>
-        <div class="contactinfobox">
-          <div class="box">
-            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="text">
-              <h3>Address</h3>
-              <p>Qena, Egypt</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="icon"><i class="fas fa-phone"></i></div>
-            <div class="text">
-              <h3>Phone</h3>
-              <p>+20 155 4682 551</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="icon"><i class="fas fa-envelope"></i></div>
-            <div class="text">
-              <h3>Email</h3>
-              <p>ibrahimalrupi04@email.com</p>
-            </div>
+  </div>
+</section>
+
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">الأعمال والمشاريع</h2>
+      <div class="portfolio-grid single-project">
+        <div class="portfolio-card">
+          <img src="bi3.png" alt="تطبيق متجر البجاوي للتخييم">
+          <div class="portfolio-info">
+            <h4>تطبيق متجر البجاوي للتخييم</h4>
+            <p>
+              تطبيق متجر إلكتروني متكامل لبيع مستلزمات التخييم والرحلات.<br>
+              تم تطويره باستخدام <b>Flutter</b> ليعمل على جميع الأجهزة بسلاسة.<br>
+              مميزات: استعراض المنتجات - الدفع الإلكتروني - تتبع الطلب.
+            </p>
+            <span class="demo-link"><i class="fab fa-flutter"></i> Flutter</span>
           </div>
         </div>
       </div>
-      <div class="formbox reveal">
-        <form id="contactForm">
-          <h3>Message Me</h3>
-          <input type="text" id="name" placeholder="Full Name">
-          <input type="email" id="email" placeholder="Your email">
-          <textarea id="message" placeholder="Your message"></textarea>
-          <input type="submit" value="Send">
-          <div id="formMsg" class="form-msg"></div>
-        </form>
-      </div>
     </div>
   </section>
-  <div class="copyright">
-    © 2025 All rights reserved by Ibrahim Alrupi
+
+  <section class="contact section" id="contact">
+  <div class="container">
+    <h2 class="section-title">تواصل معنا</h2>
+    <div class="whatsapp-contact-box">
+      <div class="whatsapp-icon-bounce">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <h3>راسلنا فوراً عبر واتساب</h3>
+      <p>لأي استفسار سريع أو طلب خدمة، فريق Alrupi جاهز للرد عليك مباشرة عبر الواتساب</p>
+      <a href="https://wa.me/201554682551?text=السلام عليكم، أود التواصل مع شركة Alrupi" target="_blank" class="btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> محادثة واتساب الآن
+      </a>
+      <div class="alt-contact">
+        <p>أو تواصل معنا مباشرة عبر:</p>
+        <span>
+          <i class="fas fa-phone"></i> +20 155 4682 551 &nbsp;|&nbsp;
+          <i class="fas fa-envelope"></i> info@alrupi.com
+        </span>
+      </div>
+    </div>
   </div>
-  <button id="backToTop" title="Back to top">↑</button>
-  <script src="script.js"></script>
-</body>
-</html>
+</section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>© 2025 شركة Alrupi. جميع الحقوق محفوظة.</p>
+    </div>
